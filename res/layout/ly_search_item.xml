@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_bg"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- ListRow Left sied Thumbnail image -->
+
+
+    <!-- Title Of Song -->
+
+
+    <!-- Artist Name -->
+
+    <ImageView
+        android:id="@+id/chapter_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/chapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@+id/chapter_img"
+        android:gravity="right|center_vertical"
+        android:text="Reciter Name"
+        android:textColor="#2D738A"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <ImageView
+        android:id="@+id/semi_chapter_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/chapter"
+        android:layout_below="@+id/chapter" />
+
+    <TextView
+        android:id="@+id/semichapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chapter"
+        android:layout_toLeftOf="@+id/semi_chapter_img"
+        android:gravity="right|center_vertical"
+        android:text="Reciter Name"
+        android:textColor="#2D738A"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/semichapter"
+        android:gravity="right|center_vertical"
+        android:minHeight="50dp"
+        android:text="Reciter Name"
+        android:textColor="#232324"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+</RelativeLayout>
