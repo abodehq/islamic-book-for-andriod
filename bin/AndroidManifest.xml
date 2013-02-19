@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mos7af.sahehmuslim"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"  />
+    <application android:icon="@drawable/icon" android:label="@string/app_name"  android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+
+        
+        <activity
+            android:name="com.mos7af.sahehmuslim.BookMainActivity"
+            android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+               
+            </intent-filter>
+             <meta-data android:name="android.app.default_searchable"
+                   android:value=".SearchBookActivity" />
+        </activity>
+        <activity android:name="com.mos7af.sahehmuslim.ChaptersActivity" >
+         <meta-data android:name="android.app.default_searchable"
+                   android:value=".SearchBookActivity" />
+         </activity>
+      
+        <activity android:name="com.mos7af.sahehmuslim.SemiChaptersActivity" >
+         <meta-data android:name="android.app.default_searchable"
+                   android:value=".SearchBookActivity" />
+         </activity>
+         <activity android:name="com.mos7af.sahehmuslim.ContentActivity" >
+              <meta-data android:name="android.app.default_searchable"
+                   android:value=".SearchBookActivity" />
+         </activity>
+         <activity android:name="com.mos7af.sahehmuslim.SearchBookActivity" >
+        <intent-filter>
+            <action android:name="android.intent.action.SEARCH" />
+
+        </intent-filter>
+        <meta-data android:name="android.app.searchable"
+                   android:resource="@xml/searchable"/>
+          <meta-data android:name="android.app.default_searchable"
+                   android:value=".SearchBookActivity" />
+  		  </activity>
+  		           <activity android:name="com.mos7af.sahehmuslim.SettingsActivity" />
+    </application>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+</manifest>
