@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+      android:background="@drawable/bg"
+    android:orientation="vertical">
+  
+  <ProgressBar android:id="@+android:id/loading"
+        android:layout_height="wrap_content" android:layout_width="wrap_content"
+        android:visibility="visible" android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_centerInParent="true"
+        
+         />
+ <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+         android:layout_above="@+id/footer"
+         android:fastScrollEnabled="true"
+        android:verticalSpacing="10dp" >
+
+    </GridView>
+
+
+ <RelativeLayout
+    android:id="@+id/footer"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+   	android:background="@drawable/footerbg">
+
+        <TextView
+            android:id="@+id/searchTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="2dp"
+            android:text="@string/search_footer"
+            android:textColor="#04b3d2"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/searchTitle"
+            android:src="@drawable/search_selected" />
+
+    </RelativeLayout>
+  
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">حصن المسلم</string>
+    <string name="book_name">حصن المسلم</string>
+    <string name="loading_book">تحميل الكتاب لأول مرة ... </string>
+    <string name="search_label">حصن المسلم</string>
+    <string name="search_hint">بحث في حصن المسلم</string>
+    <string name="search_footer">بحث في حصن المسلم</string>
+    <string name="search_again">بحث مرة أخرى</string>
+     <string name="search_result">* نتائج البحث *</string>
+    <string name="settings_description">حصن المسلم</string>
+    <string name="semi_chapter_title"></string>
+    <string name="content_chapter_title"></string>
+    <string name="content_semi_chapter_title"> : </string>
+    <string name="content_faild">لم يتم العثور على الحديث</string>
+    <string name="content_loading">تحميل ...</string>
+     <string name="settings_title">* الإعدادات *</string> 
+     
+     
+     <string name="fav_list">قائمة الأذكار</string>
+      <string name="fav_add">تمت الاضافة الى المفضلة</string>
+       <string name="fav_delete">تم الحذف من المفضلة</string>
+     
+     <string name="fonts_size_prompt">حجم الخط</string>
+      <string-array name="fonts_size_arrays">
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>32</item>
+        <item>36</item>
+        <item>40</item>
+    </string-array>
+    
+       <string name="fonts_type_prompt">نوع الخط</string>
+      <string-array name="fonts_type_arrays">
+        <item>الأفتراضي</item>
+        <item>الخط  1</item>
+        <item>الخط  2</item>
+        <item>الخط  3</item>
+        <item>الخط  4</item>
+        <item>الخط  5</item>
+        <item>الخط  6</item>
+        <item>الخط  7</item>
+        <item>الخط  8</item>
+        <item>الخط  9</item>
+    </string-array>
+    
+      <string name="fonts_color_prompt">لون  الخط</string>
+      <string name="bg_color_prompt">لون  الخلفية</string>
+      
+      <string name="db_reload">إعادة تهيئة قاعدة البيانات</string>
+</resources>

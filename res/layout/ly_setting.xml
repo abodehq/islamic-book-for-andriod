@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   android:background="@drawable/bg"
+    android:orientation="vertical">
+  <RelativeLayout
+    android:id="@+id/footer"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:orientation="horizontal"
+    android:layout_alignParentTop="true"
+   	android:background="@drawable/footerbg">
+
+        <TextView
+            android:id="@+id/searchTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="2dp"
+            android:text="@string/settings_title"
+            android:textColor="#04b3d2"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/searchTitle"
+            android:src="@drawable/settings_sel" />
+
+    </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/RelativeLayout01"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_below="@+id/footer"
+      android:layout_centerHorizontal="true"
+      android:layout_margin="5dp"
+      android:orientation="horizontal" >
+
+         <RelativeLayout
+             android:id="@+id/RelativeLayout02"
+             android:layout_width="fill_parent"
+             android:layout_height="140dp"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentRight="true"
+             android:layout_margin="5dp"
+             android:background="@drawable/footerbg"
+             android:orientation="horizontal" >
+
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginRight="16dp"
+          android:layout_marginTop="21dp"
+          android:text="@string/fonts_type_prompt"
+          android:textSize="24sp"
+          android:textColor="#04b3d2"
+          android:textStyle="bold" />
+
+      <Spinner
+          android:id="@+id/font_type"
+          android:layout_width="120dp"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+          android:entries="@array/fonts_type_arrays"
+          android:prompt="@string/fonts_type_prompt" />
+
+            <TextView
+          android:id="@+id/textView2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginRight="16dp"
+          android:layout_marginTop="81dp"
+          android:text="@string/fonts_size_prompt"
+          android:textSize="24sp"
+          android:textColor="#04b3d2"
+          android:textStyle="bold" />
+
+      <Spinner
+          android:id="@+id/font_size"
+          android:layout_width="120dp"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_marginTop="76dp"
+        android:layout_marginLeft="16dp"
+          android:entries="@array/fonts_size_arrays"
+          android:prompt="@string/fonts_size_prompt" />
+</RelativeLayout>
+
+         
+         
+          <RelativeLayout
+             android:id="@+id/RelativeLayout021"
+             android:layout_width="fill_parent"
+             android:layout_height="140dp"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentRight="true"
+               android:layout_below="@+id/RelativeLayout02"
+             android:layout_margin="5dp"
+             android:background="@drawable/footerbg"
+             android:orientation="horizontal" >
+            
+            
+              <TextView
+          android:id="@+id/bg_color_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginRight="16dp"
+          android:layout_marginTop="21dp"
+          android:text="@string/bg_color_prompt"
+          android:textSize="24sp"
+          android:textColor="#04b3d2"
+          android:textStyle="bold" />
+
+      <EditText
+          android:id="@+id/bg_color_dummy"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_alignParentLeft="true"
+         android:layout_marginTop="19dp"
+          android:layout_marginLeft="16dp"
+          android:clickable="false"
+          android:ems="10"
+          android:enabled="false"
+          android:focusable="false"
+          android:focusableInTouchMode="false"
+          android:scrollbarAlwaysDrawVerticalTrack="false" >
+
+          <requestFocus />
+      </EditText>
+
+      <Button
+          android:id="@+id/bg_color_btn"
+          android:layout_width="120dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:layout_toRightOf="@+id/bg_color_dummy"
+          android:entries="@array/fonts_type_arrays"
+          android:prompt="@string/fonts_type_prompt"
+          android:text="#ff9900" />
+              
+            
+            
+            <TextView
+          android:id="@+id/font_color_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginRight="16dp"
+          android:layout_marginTop="81dp"
+          android:text="@string/fonts_color_prompt"
+          android:textSize="24sp"
+          android:textColor="#04b3d2"
+          android:textStyle="bold" />
+
+      <EditText
+          android:id="@+id/font_color_dummy"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_alignParentLeft="true"
+          android:layout_marginTop="79dp"
+          android:layout_marginLeft="16dp"
+          android:clickable="false"
+          android:ems="10"
+          android:enabled="false"
+          android:focusable="false"
+          android:focusableInTouchMode="false"
+          android:scrollbarAlwaysDrawVerticalTrack="false" >
+
+          <requestFocus />
+      </EditText>
+
+      <Button
+          android:id="@+id/font_color_btn"
+          android:layout_width="120dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="76dp"
+          android:layout_toRightOf="@+id/font_color_dummy"
+          android:entries="@array/fonts_type_arrays"
+          android:prompt="@string/fonts_type_prompt"
+          android:text="#ff9900" />
+
+</RelativeLayout>
+
+         
+         
+  </RelativeLayout>
+
+  
+     <RelativeLayout
+    android:id="@+id/footer1"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+   	android:background="@drawable/footerbg">
+
+        <TextView
+            android:id="@+id/dbTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="2dp"
+            android:text="mos7af.com"
+            android:textColor="#04b3d2"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    
+
+    </RelativeLayout>
+</RelativeLayout>

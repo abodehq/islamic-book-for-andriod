@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   android:background="@drawable/bg"
+    android:orientation="vertical">
+  <RelativeLayout
+            android:id="@+id/RelativeLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/screen_background"
+            android:orientation="horizontal" >
+
+            <com.mos7af.husonmuslim.ScrollingTextView
+                android:id="@+id/chapter_name"
+                style="android:textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:includeFontPadding="true"
+                android:padding="0dp"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:typeface="sans" 
+                android:singleLine="true"
+   				 android:ellipsize="marquee"
+   				 android:marqueeRepeatLimit="marquee_forever"
+    			android:scrollHorizontally="true"
+      
+                />
+            
+          
+        </RelativeLayout>
+  <ProgressBar android:id="@+android:id/loading"
+        android:layout_height="wrap_content" android:layout_width="wrap_content"
+        android:visibility="visible" android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_centerInParent="true"
+        
+         />
+
+ <ListView
+     android:id="@+id/list"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_above="@+id/footer"
+     android:layout_below="@+id/RelativeLayout01"
+     android:divider="#b5b5b5"
+     android:dividerHeight="1dp"
+     android:fastScrollEnabled="true"
+     android:listSelector="@drawable/list_selector" />
+ <RelativeLayout
+    android:id="@+id/footer"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+   	android:background="@drawable/footerbg">
+
+        <TextView
+            android:id="@+id/searchTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="2dp"
+            android:text="@string/search_footer"
+            android:textColor="#04b3d2"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/searchTitle"
+            android:src="@drawable/search_selected" />
+
+    </RelativeLayout>
+</RelativeLayout>
